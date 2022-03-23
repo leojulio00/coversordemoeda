@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA_Compatible" content="IE=edge"> 
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../styles/style.css"/>
+  <title>Currency Converter</title>
+</head>
+<body>
+    
+  <!--CABECALHO-->
+  <header>
+    <div class="logo">
+      <p id="logo">Currency Converter</p>
+    </div>
+    <div class="by">
+    <p id="byL">by LeoJúlio</p>
+    </div>
+  </header>
+  
+  <!--CORPO DO SITE-->
+  <main>
+    <section class="section1">
+      <div class="seccao1">
+      <a href="../conversor2/conversor.html"><button class="btn1">Euro para Meticais</button></a>
+      
+      <a href="#"><button class="btn1">Dolar-US para Euro</button></a>
+      
+      <a href="../conversor4/conversor.html"><button class="btn1">Rand para Meticais</button></a>
+    </div>
+    </section>
+    
+    
+    <section class="section2">
+      <div class="seccao2">
+    <div class="label">
+      <h2 id="lebels">Dolar - US</h2>
+      <input id="input1" type="number" placeholder="Digite algum número" onKeyup="calcular(this.value)">
+    </div>
+    
+    <p id="vale">Para</p>
+    
+     <div class="label">
+      <h2 id="lebels">Meticais</h2>
+      <input id="input2" type="number" placeholder="Digite algum número" onKeyup="calcular2(this.value)">
+    </div>
+      </div>
+    </section>
+    
+    <section class="section3">
+      <div class="seccao3">
+        <h1>Curiosidades</h1>
+        <div class="curiosidade1">
+          <h2 id="curiosidade1">Acionista</h2>
+          <br>
+          <p id="txt1">
+           Proprietário de ações de uma companhia.
+            <br>
+Sócio de uma companhia Acionista Controlador: Pessoa, física ou jurídica, ou grupo de pessoas vinculadas por acordo de voto, ou sob controle comum.
+          </p>
+        </div>
+        
+            <div class="curiosidade1">
+          <h2 id="curiosidade1">Ações</h2>
+          <br>
+          <p id="txt1">
+            É a representação da menor parcela em que se divide o capital de uma Sociedade Anônima (SA). Os títulos são emitidos com a finalidade de captar recursos. Quem adquire uma ação torna-se sócio da empresa.
+          </p>
+        </div>
+        
+            <div class="curiosidade1">
+          <h2 id="curiosidade1">Aluguel de Ações</h2>
+          <br>
+          <p id="txt1">
+            O detentor das ações (doador), aluga seus ativos a um terceiro (tomador), em troca de uma taxa acordada. Já o tomador pode negociar esses ativos no mercado, sendo obrigado a devolvê-los dentro do prazo estipulado. Para realizar operações de Aluguel de Ações, é necessário que você tenha aderido ao contrato de BTC (Aluguel de Ações). O tomador deve ao doador a remuneração pelo aluguel, fixada em taxa de juros combinada na assinatura do contrato de aluguel, e corretagens sobre as intervenções da corretora em bolsa. As corretoras agentes deste processo e garantem as operações.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+  
+  <!--RODAPÉ-->
+  <!-- <footer>
+    <div class="by2">
+    <p id="byL2">by LeoJúlio</p>
+    </div>
+  </footer>-->
+  
+  <script type="text/javascript">
+   
+  function calcular(){
+  var input1 = document.getElementById('input1').value;
+    var input2 = document.getElementById('input2').value;
+    var dolar = 58.9;
+    var valor = input1 * dolar;
+    
+    document.getElementById('input2').value = valor;
+  }
+  
+  function calcular2(){
+  var input1 = document.getElementById('input1').value;
+    var input2 = document.getElementById('input2').value;
+    var dolar = 58.9;
+    var valor = input2 / dolar;
+    
+    document.getElementById('input1').value = valor;
+  }
+  </script>
+</body>
+</html>

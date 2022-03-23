@@ -1,0 +1,254 @@
+*{
+  font-family: roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  z-index: 12;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-areas: 
+  "logo by";
+  height: 70px;
+  align-items: center;
+  background: coral;
+  color: white;
+  box-shadow: 0px 0px 12px rgba(0,0,0, .6);
+}
+
+.logo{
+  grid-column: 2/3;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.by{
+  grid-column: 3/4;
+  font-size: 25px;
+  justify-self: end;
+  padding: 3.5px 10px;
+  border-right: 2.4px solid #fff;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: .14fr .46fr .5fr;
+  grid-template-areas: 
+  "section1"
+  "section2"
+  "section3";
+  text-align: center;
+  animation: aparecer 2s;
+  padding-top: 35px;
+}
+
+.section1{
+  grid-area: section1;
+  grid-column: 2/3;
+  background: blu;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.seccao1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+button{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  color: lightgreen;
+  border: 4px solid lightgreen;
+  border-radius: 13px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.section2{
+  position: relative;
+  grid-area: section2;
+  grid-column: 2/3;
+  background: coral;
+  margin: 20px -12.5%;
+}
+
+.seccao2{
+  margin: 200px 0px;
+  color: white;
+}
+
+.seccao2 div{
+  margin: 50px;
+}
+
+.seccao2 div h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.seccao2 div input{
+  font-size: 34px;
+  padding: 7px;
+  background: none;
+  border: none;
+  border-bottom: 6px solid lightgreen;
+  color: white;
+}
+
+.seccao2 p{
+  font-size: 13px;
+}
+
+.section3{
+  grid-area: section3;
+  grid-column: 2/3;
+  margin: 45px 0px;
+}
+
+.seccao3 h1{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: lightgreen;
+}
+
+.seccao3 div{
+  margin: 50px 0px;
+}
+
+.seccao3 div h2{
+  color: lightgreen;
+}
+
+.seccao3 p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+@keyframes aparecer{
+  from{
+   opacity: 0; 
+  }
+  
+  to{
+    opacity: 1;
+    
+  }
+}
+
+
+ @media (max-width: 744px){
+  .logo{
+    font-size: 20px;
+  }
+   
+   .by{
+     font-size: 17px;
+   }
+   
+   .section1{
+     margin: 10px 0px;
+   }
+   
+     .seccao1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+button{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  color: lightgreen;
+  border: 4px solid lightgreen;
+  border-radius: 13px;
+  padding: 10px;
+  margin: 20px;
+}
+   
+  .section2{
+    margin: 20px -12.5%;
+  }  
+   
+   .seccao2{
+  margin: 70px 0px;
+  color: white;
+}
+
+.seccao2 div{
+  margin: 30px 0px;
+}
+   .seccao2 div h2{
+  font-size:20px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+   
+   .seccao2 div input{
+     font-size: 20px;
+     border-bottom: 3px solid lightgreen;
+   }
+   
+   .seccao2 p{
+  font-size: 16px;
+}
+   
+   .section3{
+  grid-area: section3;
+  grid-column: 2/3;
+  margin: 45px 0px;
+}
+
+.seccao3 h1{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: lightgreen;
+}
+
+.seccao3 div{
+  margin: 25px 0px;
+}
+   .seccao3 div h2{
+     font-size: 18px;
+     color: lightgreen;
+   }
+
+.seccao3 p{
+  font-size: 14px;
+  text-align: justify;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style1.css"/>
+  <title>Currency Converter</title>
+</head>
+<body>
+  <div class="tudo">
+  <div class="container">
+    <div class="bemvindo">
+      <p id="bemvindo">
+        Bem vindo 
+      </p>
+      <p id="converter">
+      Converter moedas agora tornou-se muito mais <br> <u><b>fácil!</b></u>  
+      </p>
+    </div> 
+    <div class="border"></div>
+    </div>
+   <div class="cbtn">
+     <a href="conversor/conversor.html"><button class="btn" onclick="conversor()">Converter agora</button></a>
+  </div> 
+  </div>
+  
+  
+  
+  <script type="text/javascript">
+  
+  funtion conversor(){
+    alert("Usuário aceite!");
+  };
+  
+  const border = document.querySeletor('.border');
+const border = document.querySeletor('#bemvindo');
+const border = document.querySeletor('#converter');
+const border = document.querySeletor('.btn');
+
+
+const tl = new.TimelineMax();
+
+tl.FromTo(border, 1, {heigth: "0px"}, {heigth: "340px"});
+  
+  </script>
+</body>
+</html>

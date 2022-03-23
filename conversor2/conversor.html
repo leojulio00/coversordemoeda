@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA_Compatible" content="IE=edge"> 
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../styles/style.css"/>
+  <title>Currency Converter</title>
+</head>
+<body>
+    
+  <!--CABECALHO-->
+  <header>
+    <div class="logo">
+      <p id="logo">Currency Converter</p>
+    </div>
+    <div class="by">
+    <p id="byL">by LeoJúlio</p>
+    </div>
+  </header>
+  
+  <!--CORPO DO SITE-->
+  <main>
+    <section class="section1">
+      <div class="seccao1">
+      <a href="../conversor/conversor.html"><button class="btn1">Dolar-US para Meticais</button></a>
+      
+      <a href="#"><button class="btn1">Dolar-US para Euro</button></a>
+      
+      <a href="../conversor4/conversor.html"><button class="btn1">Rand para Meticais</button></a>
+    </div>
+    </section>
+    
+    
+    <section class="section2">
+      <div class="seccao2">
+    <div class="label">
+      <h2 id="lebels">Euro</h2>
+      <input id="input1" type="number" placeholder="Digite algum número" onKeyup="calcular(this.value)">
+    </div>
+    
+    <p id="vale">Para</p>
+    
+     <div class="label">
+      <h2 id="lebels">Meticais</h2>
+      <input id="input2" type="number" placeholder="Digite algum número" onKeyup="calcular2(this.value)">
+    </div>
+      </div>
+    </section>
+    
+    <section class="section3">
+      <div class="seccao3">
+        <h1>Curiosidades</h1>
+        <div class="curiosidade1">
+          <h2 id="curiosidade1">AGE</h2>
+          <br>
+          <p id="txt1">
+            <b>Assembléia Geral </b> <br>
+            <b>Extraordinária:</b> Reunião dos acionistas, de acordo com as normas da empresa emitente, para tomar decisões sobre qualquer tema de interesse social.
+          </p>
+        </div>
+        
+            <div class="curiosidade1">
+          <h2 id="curiosidade1">Andar de lado</h2>
+          <br>
+          <p id="txt1">
+            Jargão de mercado que indica que a bolsa se encontra estável, nem com viés de alta nem de baixa, ou seja, sem tendências.
+          </p>
+        </div>
+        
+            <div class="curiosidade1">
+          <h2 id="curiosidade1">Análise Fundamentalista</h2>
+          <br>
+          <p id="txt1">
+            É o setor que estuda os aspectos econômicos, financeiros e mercadológicos da Cia. Esta é a análise que busca estudar a saúde financeira e operacional da empresa em busca de projeções futuras da Cia.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+  
+  <!--RODAPÉ-->
+  <!-- <footer>
+    <div class="by2">
+    <p id="byL2">by LeoJúlio</p>
+    </div>
+  </footer>-->
+  
+  <script type="text/javascript">
+   
+  function calcular(){
+  var input1 = document.getElementById('input1').value;
+    var input2 = document.getElementById('input2').value;
+    var euro = 71.9;
+    var valor = input1 * euro;
+    
+    document.getElementById('input2').value = valor;
+  }
+  
+  function calcular2(){
+  var input1 = document.getElementById('input1').value;
+    var input2 = document.getElementById('input2').value;
+    var euro = 71.9;
+    var valor = input2 / euro;
+    
+    document.getElementById('input1').value = valor;
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: coral;
+}
+
+/*.tudo{
+  position: relative;
+  align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}*/
+
+.tudo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -170px;
+  margin-left: -350px;
+}
+
+.container{
+  position: relative;
+  width: 700px;
+  height: 340px;
+  align-items: center;
+
+}
+
+#bemvindo{
+  position: absolute;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0px 0px 20px 35px;
+  color: white;
+  animation: bv 1.5s;
+  text-transform: uppercase;
+}
+
+
+#converter{
+  position: absolute;
+  font-size: 50px;
+  color: black;
+  opacity: .6;
+  top: 150px;
+  margin: 0px 35px;
+  animation: converter 2.1s;
+}
+
+.border{
+  position: absolute;
+  width: 700px;
+  height: 340px;
+  border-left: 15px solid lightgreen;
+  z-index: 4;
+  animation: bd .3s;
+}
+
+.cbtn{
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.btn{
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 11px;
+  background: lightgreen;
+  color: coral;
+  padding: 10px;
+  box-shadow: 5px 4px 10px #fff;
+  animation: aparecer 2s;
+}
+
+
+
+
+@keyframes bd{
+  from{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes bv{
+  from{
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes converter{
+  from{
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  
+  to{
+    opacity: .6;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparecer{
+  from{
+    opacity: 0;
+  }
+  
+  to{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px){
+  .tudo{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  margin-top: 180px;
+  margin-left: 200px;
+}
+
+.container{
+  position: relative;
+  width: 400px;
+  height: 260px;
+  align-items: center;
+
+}
+
+#bemvindo{
+  position: absolute;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0px 0px 20px 35px;
+  color: white;
+  animation: bv 1.5s;
+  text-transform: uppercase;
+}
+
+
+#converter{
+  position: absolute;
+  font-size: 40px;
+  color: black;
+  opacity: .6;
+  top: 170px;
+  margin: 0px 35px;
+  animation: converter 2.1s;
+}
+
+.border{
+  position: absolute;
+  width: 700px;
+  height: 340px;
+  border-left: 15px solid lightgreen;
+  z-index: 4;
+  animation: bd .3s;
+}
+
+.cbtn{
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.btn{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 11px;
+  background: lightgreen;
+  color: coral;
+  padding: 10px;
+  box-shadow: 5px 4px 10px #fff;
+  animation: aparecer 2s;
+}
+
+}
+
+
+
+
